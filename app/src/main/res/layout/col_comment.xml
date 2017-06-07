@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ImgColCommentUser"
+            android:layout_width="@dimen/HWImgProfile"
+            android:layout_height="@dimen/HWImgProfile"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_action_person" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/MarginLayout"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TvColCommentNameUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium Text"
+                    android:textSize="20dp"
+                    android:textColor="@color/md_black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TvColCommentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_action_clock_yellow_light"
+                    android:gravity="center"
+                    android:textColor="@color/md_black"
+                    android:text="Small Text"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/TvColCommentMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/md_black"
+                    android:text="comment"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

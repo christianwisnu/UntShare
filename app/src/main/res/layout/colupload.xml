@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_margin="@dimen/MarginLayout"
+   		 android:background="@drawable/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/ImgColUserUploadBerita"
+                android:layout_width="@dimen/HWImgProfile"
+                android:layout_height="@dimen/HWImgProfile"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_action_person" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TvColJudulUpload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medium Text"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="-18dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TvColUserUploadDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Small Text"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <!--<ImageView
+                    android:id="@+id/ImgColUserAccsessUpload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ic_action_overflow_holo_light" />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<TextView
+            android:layout_margin="@dimen/MarginLayout"
+            android:id="@+id/TvColUserUploadDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/HWColUpload" >
+
+            <ImageView
+                android:id="@+id/ImgColUserUploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@drawable/baygroundspl" />
+
+            <ImageView
+                android:id="@+id/ImgColUploadLike"
+                android:layout_width="@dimen/HWButtonCycle"
+                android:layout_height="@dimen/HWButtonCycle"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/slctcylewhitetransparant"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_action_like_holo_light" />
+
+            <ImageView
+                android:id="@+id/ImgColUploadComment"
+                android:layout_width="@dimen/HWButtonCycle"
+                android:layout_height="@dimen/HWButtonCycle"
+                android:layout_alignTop="@+id/ImgColUploadLike"
+                android:layout_toRightOf="@+id/ImgColUploadLike"
+                android:background="@drawable/slctcylewhitetransparant"
+                android:scaleType="centerInside"
+                android:layout_alignParentBottom="true"
+                android:src="@mipmap/ic_action_copy_holo_light" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:id="@+id/LnrColUploadCommentNLike">
+
+            <TextView
+                style="@style/text_small_bold"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_like"
+                android:textColor="@color/md_orange_700"
+                android:text="0"
+                android:id="@+id/TvColUploadCommentLike" />
+
+            <TextView
+                style="@style/text_small_bold"
+                android:drawableLeft="@drawable/ic_comment"
+                android:textColor="@color/md_orange_700"
+                android:text="0"
+                android:id="@+id/TvColUploadCommentCount" />
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>

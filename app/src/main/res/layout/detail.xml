@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:background="@drawable/side_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_dimen"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ImgDetailBack"
+            android:layout_width="@dimen/actionbar_dimen"
+            android:layout_height="@dimen/actionbar_dimen"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_action_goleft" />
+
+        <TextView
+            android:layout_margin="@dimen/MarginLayout"
+            android:gravity="left|center"
+            android:textStyle="bold"
+            android:textColor="@color/White_Snow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:text="ITATS News"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_margin="@dimen/MarginLayout"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ImgDetailGambarBerita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bac"  />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cardblue"
+                android:id="@+id/kolomJudulDetail"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_margin="@dimen/MarginLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/MarginLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/txtDetailJudul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Medium Text"
+                            android:textColor="@color/White_Snow"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtDetailPengarangBerita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Judul"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txtDetailJenisBerita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipe Berita"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtDetailTglTerbit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="@dimen/MarginLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Small Text"
+                    android:textColor="@color/md_black"
+                    android:id="@+id/txtDetailIsiBerita" />
+
+            </LinearLayout>
+
+            <Button
+                android:textStyle="bold"
+                android:background="@drawable/slctbluewhite"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:layout_marginTop="@dimen/MarginButton"
+                android:layout_marginBottom="@dimen/MarginButton"
+                android:id="@+id/btnDetailKomentar"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/HButton"
+                android:text="Komentar"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

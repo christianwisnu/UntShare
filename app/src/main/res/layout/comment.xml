@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_dimen"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/side_nav_bar"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ImgBackCooment"
+            android:layout_width="@dimen/actionbar_dimen"
+            android:layout_height="@dimen/actionbar_dimen"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_action_goleft" />
+
+        <TextView
+            android:id="@+id/TvColCommentNameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/MarginLayout"
+            android:text="Komentar"
+            android:textSize="20dp"
+            android:textColor="@color/md_white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_below="@+id/linearLayout1" >
+
+        <ListView
+            android:id="@+id/LsvComment"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/TvCommentStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small Text"
+            android:textSize="15dp"/>
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@+id/PbrCommentStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center_vertical" >
+
+        <EditText
+            android:layout_marginLeft="@dimen/MarginLayout"
+            android:layout_marginRight="@dimen/MarginLayout"
+            android:id="@+id/EComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ImgSendComment"
+            android:background="@drawable/cycle_line"
+            android:ems="10"
+            android:hint="@string/SendComment" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/ImgSendComment"
+            android:layout_width="@dimen/HWButtonCycle"
+            android:layout_height="@dimen/HWButtonCycle"
+            android:scaleType="centerInside"
+            android:src="@drawable/slct_send_message"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

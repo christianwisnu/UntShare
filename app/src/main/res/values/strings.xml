@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">ITATS News</string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_user_name">Enter your user name</string>
+    <string name="err_msg_pasw">Enter your password</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Login">LOGIN</string>
+    <string name="Loading">Login...</string>
+    <string name="Nama">Masukkan Nama</string>
+    <string name="UserName">Masukkan UserName</string>
+    <string name="Email">Masukkan Email</string>
+    <string name="pass">Masukkan Password</string>
+    <string name="SignUp">Register</string>
+    <string name="Send">Kirim</string>
+    <string name="SendComment">Kirim Comentar</string>
+    <string name="Member">Ingat Saya</string>
+    <string name="Miring"> / </string>
+    <string name="CreateAccount"> Buat Acount Baru </string>
+    <string name="FindFrends"> Cari Teman</string>
+    <string name="ProfileStaus"> Status </string>
+    <string name="ProfileNama"> Nama </string>
+    <string name="ProfileAnggota"> Anggota </string>
+    <string name="Camer"> Camera </string>
+    <string name="Galer"> Galeri </string>
+    <string name="Upload"> Upload </string>
+    <string name="Description"> Keterangan Kain</string>
+    <string name="Nama_Kain"> Nama kain</string>
+    <string name="Jenis_Kain"> Jenis kain</string>
+    <string name="Wilayah"> Wilayah</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="ValComment">Comment Tidak Boleh Kosong</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
